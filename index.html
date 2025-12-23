@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en,mr,hi" data-theme="light">
+    <html lang="en,mr,hi" data-theme="dark"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="app-title">ChitChatX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        
+        <header>
+            <div class="logo">
+                <span class="logo-main">ChitChat</span><span class="logo-x">X</span>
+            </div>
+            <div class="header-controls">
+                
+                <select id="language-select" class="control-select">
+                    <option value="en">English</option>
+                    <option value="mr">मराठी (Marathi)</option>
+                    <option value="hi">हिन्दी (Hindi)</option>
+                </select>
+
+                <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+            </div>
+        </header>
+
+        <div id="messages" class="messages-area">
+            </div>
+
+        <form id="chat-form" class="input-area">
+            <input id="message-input" type="text" placeholder="Type a message..." autocomplete="off" />
+            <button type="submit" id="send-btn">Send</button>
+            <button type="button" id="voice-toggle" class="voice-btn" title="Toggle Voice Readout">🔊</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

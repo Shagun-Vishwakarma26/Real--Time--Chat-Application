@@ -1,0 +1,16 @@
+{
+  "name": "chitchatx-client",
+  "version": "1.0.0",
+  "description": "Frontend for Real-Time Chat Application",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html" 
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "real-time"
+  ],
+  "author": "",
+  "license": "ISC"
+}
